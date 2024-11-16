@@ -1,9 +1,5 @@
 resource "aws_instance" "example" {
-  ami           = var.ami
+  ami           = var.ami_id
   instance_type = var.instance_type
-
-  tags = {
-    Name = var.instance_name
-  }
+  key_name      = var.key_pair_name
 }
-
