@@ -1,14 +1,17 @@
+variable "ami" {
+  description = "ec2_ami_id"
+  type        = string
+  default     = "ami-012967cc5a8c9f891"
+}
+
 variable "instance_type" {
+  description = "EC2 instance type"
   type        = string
-  description = "t2-micro"
+  default     = "t2.micro"
 }
 
-variable "ami_id" {
+variable "instance_name" {
+  description = "Name of the EC2 instance"
   type        = string
-  description = "ami-012967cc5a8c9f891"
-}
-
-variable "key_pair_name" {
-  type        = string
-  description = "mykeypair"
+  default     = "my_terra_ec2
 }
